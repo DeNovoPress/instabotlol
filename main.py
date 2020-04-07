@@ -1,5 +1,22 @@
-from instapy import InstaPy
 import os
+import sys
+from http.server import HTTPServer, CGIHTTPRequestHandler
+import threading
+from instapy import InstaPy
+
+## Start a simple HTTP Server
+
+def start_server(path, port=8000):
+    '''Start a simple webserver serving path on port'''
+    os.chdir(path)
+    httpd = HTTPServer(('', port), CGIHTTPRequestHandler)
+    httpd.serve_forever()
+
+# Start the server in a new thread
+port = 8000
+daemon = threading.Thread(name='daemon_server', target=start_server, args=('.', port))
+daemon.setDaemon(True) # Set as a daemon so it will be killed once the main thread is dead.
+daemon.start()
 
 ## Instapy Documentation: https://github.com/timgrossmann/InstaPy/blob/master/DOCUMENTATION.md
 
