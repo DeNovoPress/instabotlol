@@ -39,8 +39,8 @@ session.set_dont_like(["mein kampf", "nsfw"])
 session.set_do_follow(True, percentage=50)
 
 ## Auto-Commenting - Disabled by default
-session.set_do_comment(False, percentage=50)
-session.set_comments(["Nice!", "Sweet!", "Beautiful :heart_eyes:"])
+session.set_do_comment(True, percentage=25)
+session.set_comments(["Nice!", "Sweet!", "Beautiful :heart_eyes:", "Great Content!"])
 
 ## Additional filters
 session.set_skip_users(skip_private=True, private_percentage=100, skip_no_profile_pic=True, no_profile_pic_percentage=100,
