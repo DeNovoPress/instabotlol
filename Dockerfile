@@ -9,7 +9,7 @@ ENV SIMULATION True
 RUN apt-get update && apt-get install -y --no-install-recommends wget git firefox-esr \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/kenmoini/instabotlol \
+RUN git clone https://github.com/DeNovoPress/instabotlol \
  && cd instabotlol \
  && pip install -r requirements.txt \
  && cp main.py ..
