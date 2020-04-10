@@ -32,15 +32,15 @@ peak_likes_hourly=51, peak_likes_daily=385, peak_comments_hourly=12, peak_commen
 peak_unfollows_daily=402, peak_server_calls_hourly=None, peak_server_calls_daily=4200)
 
 ## Like the images matching either of these tags and not some others
-session.like_by_tags(["novels", "books", "authors", "writers" "reading"], amount=5)
+session.like_by_tags(["novels", "books", "authors", "writers", "reading", "WriterCommunity", "WritingTips", "WritingPrompts"], amount=8)
 session.set_dont_like(["mein kampf", "nsfw"])
 
 ## Auto-follow half of the time
-session.set_do_follow(True, percentage=50)
+session.set_do_follow(True, percentage=10)
 
 ## Auto-Commenting - Disabled by default
-session.set_do_comment(True, percentage=25)
-session.set_comments(["Nice!", "Sweet!", "Beautiful :heart_eyes:", "Great Content!"])
+session.set_do_comment(True, percentage=40)
+session.set_comments(["Nice!", "Sweet!", "I really like this", "Great Content!", "Awesome!"])
 
 ## Additional filters
 session.set_skip_users(skip_private=True, private_percentage=100, skip_no_profile_pic=True, no_profile_pic_percentage=100,
