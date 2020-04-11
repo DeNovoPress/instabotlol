@@ -36,7 +36,7 @@ session.like_by_tags(["novels", "books", "authors", "writers", "reading", "Write
 session.set_dont_like(["mein kampf", "nsfw"])
 
 ## Auto-follow half of the time
-session.set_do_follow(True, percentage=10)
+session.set_do_follow(enabled=True, percentage=50)
 
 ## Auto-Commenting - Disabled by default
 session.set_do_comment(enabled=True, percentage=25)
