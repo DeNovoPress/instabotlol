@@ -23,7 +23,7 @@ daemon.start()
 session = InstaPy(username=os.environ.get('USER'), password=os.environ.get('PASS'), headless_browser=True)
 session.login()
 
-session.set_simulation(enabled=os.environ.get('SIMULATION'))
+session.set_simulation(enabled=False)
 
 ## Set quota limits to keep Instagram from banning you because it thinks you're a bot
 
