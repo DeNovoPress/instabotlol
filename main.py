@@ -36,11 +36,11 @@ session.like_by_tags(["novels", "books", "authors", "writers", "reading", "Write
 session.set_dont_like(["mein kampf", "nsfw"])
 
 ## Auto-follow half of the time
-session.set_do_follow(enabled=True, percentage=50, times=1)
+session.set_do_follow(enabled=True, percentage=10, times=1)
 
 ## Auto-Commenting - Disabled by default
-session.set_do_comment(enabled=True, percentage=25)
-session.set_comments(["Nice!", "Sweet!", "I really like this", "Great Content!", "Awesome!"])
+session.set_do_comment(enabled=True, percentage=100)
+session.set_comments(["Nice!", "Sweet!", "I really like this", "Great Content!", "Awesome!", "Interesting!", "We just released a new book, The Stray, care to take a look?", "We're a new indie publisher, check us out!", "How long have you been writing?", "Give us a follow to support indie publishers!", "Do you like prose or poetry most?", "What's your favorite book?"])
 
 ## Additional filters
 session.set_skip_users(skip_private=True, private_percentage=100, skip_no_profile_pic=True, no_profile_pic_percentage=100,
