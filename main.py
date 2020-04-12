@@ -14,7 +14,7 @@ def start_server(path, port=8000):
 
 # Start the server in a new thread
 port = 8000
-daemon = threading.Thread(name='daemon_server', target=start_server, args=('.', port))
+daemon = threading.Thread(name='daemon_server', target=start_server, args=('./healthz/', port))
 daemon.setDaemon(True) # Set as a daemon so it will be killed once the main thread is dead.
 daemon.start()
 
