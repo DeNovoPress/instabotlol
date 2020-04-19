@@ -32,7 +32,7 @@ peak_likes_hourly=51, peak_likes_daily=385, peak_comments_hourly=12, peak_commen
 peak_unfollows_daily=402, peak_server_calls_hourly=None, peak_server_calls_daily=4200)
 
 ## Like the images matching either of these tags and not some others
-session.like_by_tags(["indiepublisher", "newauthors", "unpublishedauthor", "sci-fi", "indieauthors", "newwriters", "reading", "WritingCommunity", "WritingPrompts"], amount=9)
+session.like_by_tags(["publisher", "indiebooks", "indieauthors", "writing", "reading", "selfpublishing", "WritingTips", "WritingPrompts"], amount=8)
 session.set_dont_like(["mein kampf", "nsfw"])
 
 ## Auto-follow half of the time
